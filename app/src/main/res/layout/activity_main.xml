@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="504dp"
+        android:layout_height="276dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#A63DB1"
+            android:text="@string/what_type_of_coffe"
+            android:textColor="#F1EDED"
+            android:textSize="34sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="245dp">
+
+            <RadioButton
+                android:id="@+id/decafe"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:text="@string/decaf"
+                android:textColor="#E8E5E5"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/excepresso"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:text="@string/excepresso"
+                android:textColor="#EFEDED"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/colombien"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:text="@string/colombien"
+                android:textColor="#EDEBEB"
+                android:textSize="24sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="499dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.052">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="#A63DB1"
+            android:text="@string/what_else_in_you_coffe"
+            android:textColor="#F3F0F0"
+            android:textSize="34sp" />
+
+        <CheckBox
+            android:id="@+id/cream"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:text="@string/cream"
+            android:textColor="#EFEDED"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/sugar"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:text="@string/sugar"
+            android:textColor="#F4F3F3"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="225dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_design"
+        android:backgroundTint="#C8C5C5"
+        android:backgroundTintMode="add"
+        android:shadowColor="#AAA0A0"
+        android:text="@string/pay"
+        android:textColor="#070707"
+        android:textSize="34sp"
+        app:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

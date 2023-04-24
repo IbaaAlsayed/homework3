@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="what_type_of_coffe">what type of coffe ?</string>
+    <string name="decaf">Decaf</string>
+    <string name="excepresso">Excepresso</string>
+    <string name="colombien">Colombien</string>
+    <string name="what_else_in_you_coffe">what else in you coffe ?</string>
+    <string name="cream">Cream</string>
+    <string name="sugar">Sugar</string>
+    <string name="pay">Pay</string>
+</resources>
